@@ -1,0 +1,11 @@
+.slick-slide {
+	padding-left: 5%;
+}
+
+.slick-current {
+	padding-left: 5%;
+}
+
+.slick-dots {
+	position: sticky;
+}

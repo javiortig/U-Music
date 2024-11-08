@@ -1,0 +1,165 @@
+/* Estilo del home */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #322272;
+}
+
+.homeContent{
+  padding: 0 18%;
+  background-color: #322272;
+}
+
+.homeContent h1{
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  color: #ffffff;
+  margin-top: 7%;
+  margin-bottom: 0;
+
+}
+
+.activitiesContent{
+  background-color: #322272;
+  color:#322272;
+  height: 100vh;
+}
+
+.formGroup{
+  margin-top:5%;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Alinea el contenido al inicio verticalmente */
+  background-color: #322272;
+}
+
+.cartaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    margin-top: 5%;
+}
+
+.filtrosBox{
+  display: flex;
+  margin-top: 13vh;
+  padding: 0 18%;
+}
+.searchBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-right: 2%;
+
+}
+
+.searchBar input{
+  background-color: #00000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.filtrosHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-right: 2%;
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.selectedHeader{
+  background-color: #ffffff;
+  color: #322272;
+}
+
+.filtrosSuperBox{
+  padding-bottom: 2%;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  
+  width: 64%;
+  margin-left: 18%;
+
+  margin-top: 1%;
+  border-top: 2px solid transparent; /* Make border color transparent to apply the gradient */
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0)) 1;
+}
+.filter{
+  display: center;
+  justify-content: center;
+  margin: 2%;
+  flex-grow: 1;
+}
+
+.organizers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+  width: 70%;
+  margin-left: 15%;
+
+  margin-top: 1%;
+  border-top: 2px solid transparent; /* Make border color transparent to apply the gradient */
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0)) 1;
+}
+.organizer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2%;
+  flex-grow: 1;
+  color: #ffffff;
+  font-size: 16pt;
+}
+.organizer label {
+  display: block;
+  border: 2px solid #ffffff;
+  width: 0.8em;
+  height: 0.8em;
+  color: #ffffff;
+  margin-left: 0.5em;  
+  cursor: pointer;
+  margin-top: 0.25em;
+}
+.organizer input {
+  display: none;
+}
+.organizer input:checked  + label{
+  background-color: #ffffff;
+}
+.isRadio label {
+  border-radius: 100%;
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/Montserrat-ExtraBold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+  }

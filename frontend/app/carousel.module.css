@@ -1,0 +1,80 @@
+/* Estilo del carrousel*/
+
+.carousel{
+   
+    display: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 50vh;
+    width: 80%;
+    margin-top: 13vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background: transparent;
+    /*border-radius: 10px;
+    background: radial-gradient(circle at center, #6E92E3, #322272); /* Crea un degradado radial */
+
+    /*color: #ffffff;*/
+}
+
+
+.imgCarrouselBox{
+    
+    width: 200px; /* Tamaño deseado del contenedor de la imagen */
+    height: 40vh; /* Tamaño deseado del contenedor de la imagen */
+    position: relative;
+    
+}
+.imgCarrousel{
+    
+    /*margin-left: 15%;*/
+    position: absolute;
+    text-align: center;
+    object-position: center;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.imgCarrousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de la imagen */
+    transition: transform 0.2s ease;
+}
+
+
+.imgCarrouselText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    
+    margin-top: 30%;
+}
+.imgCarrouselBox h4{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: white;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    text-align: center;
+    /*text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white; /* Añadimos un contorno blanco */
+
+}
+.imgCarrouselBox p{
+    font-size: 0.8em;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    text-align: center;
+    /*text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white; /* Añadimos un contorno blanco */
+}

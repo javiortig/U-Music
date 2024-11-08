@@ -1,0 +1,104 @@
+/* Estilo de las cartas de la actividad */
+.cartaActividad {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px; /* Espacio entre cartas de actividad */
+    background-color:#ffffff;
+    /*transition: transform 0.2s ease;*/
+    transition: transform 0.2s ease;
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  .cartaActividad:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+
+  }
+  
+  .imagen {
+    width: 40%;
+    margin:0;
+    padding: 0%;
+    flex-shrink: 0; /* Evita que la imagen se encoja para ajustarse al contenido */
+    margin-right: 5%; 
+    display: flex;
+    justify-content: center;
+    background-color: #322272;
+    
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .listaReservas {
+    max-height: 25vh;
+    overflow-y: scroll;
+    margin-bottom: 1%;
+  }
+
+  .contenidoReserva {
+    width: 60%;
+    padding-top: 2%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .contenidoReserva h2, .contenidoReserva h4 {
+    margin-bottom: 2%; /* Espacio inferior para el título */
+    color: #322272;
+  }
+  
+  .contenidoReserva p {
+    margin-bottom: 1%; /* Espacio inferior para el párrafo */
+    text-align: center;
+    color: #322272;
+  }
+
+  .contenidoReserva button {
+    background-color: #322272;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2%;
+  }
+  
+  .contenido {
+    width: 60%;
+    padding-top: 5%;
+    /*padding: 3% 3%; /* Espacio interno dentro del contenido */
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contenido  h2, .contenido h4 {
+    margin-bottom: 5%; /* Espacio inferior para el título */
+    color: #322272;
+    text-align: left;
+  }
+  
+  .contenido p {
+    margin-bottom: 3%; /* Espacio inferior para el párrafo */
+    text-align: left;
+    color: #322272
+    
+  }
+  
+  .contenido button {
+    background-color: #322272;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 20%;
+    width: 50%;
+  }
+  

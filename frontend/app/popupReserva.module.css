@@ -1,0 +1,340 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.inputContainer{
+    display: flex; /* Activates flexbox */
+    flex-direction: row; /* Aligns children in a horizontal row (this is the default) */
+    align-items: center; /* Aligns items vertically in the center, optional based on your needs */
+    margin-top: 5%;
+    justify-content: center;
+  }
+
+.pText{
+    margin-right: 5%; /* Optional: adds spacing between children */
+    font-size: 1.3em;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.inputSelect{
+    margin-right: 5%; /* Optional: adds spacing between children */
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+/* .inputContainer > * {
+    border: 1px solid red;
+} */
+
+
+.nextLink{
+    text-decoration: none;
+    color: #322272;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+.empty{
+    position: relative; /* Position child absolutely within the parent */
+    background-color: lightcoral; /* Just to make the child visible */
+    text-align: center; /* Center the text */
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    color: #322272;
+}
+
+.bodyText {
+    margin-top: 2%;
+    color: #322272;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 1.5em;
+}
+
+.overlay::-webkit-scrollbar {
+    width: 0;
+    /* Ancho 0 para ocultar */
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 65%;
+    /* Ajusta el ancho según tus necesidades */
+    width: 100%;
+    min-height: 70%;
+    overflow-y: hidden;
+    /* Permitir desplazamiento si el contenido es demasiado largo */
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.popup button {
+    background-color: #322272;
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat-Regular', sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.formPadding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.imageTextSection {
+    border-bottom: 2px solid black;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+.closeButton {
+    position: relative;
+    z-index: 99;
+    float: right;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.imageTextContainer {
+    display: flex;
+    width: 100%;
+}
+
+.imageContainer {
+    position: relative;
+
+    height: 10vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    width: 21%;
+}
+
+.imageActividad {
+    position: relative;
+    border-radius: 50%;
+    /* Hacemos que la imagen tenga forma de círculo */
+    overflow: hidden;
+    /* Ocultamos cualquier parte de la imagen que esté fuera del círculo */
+    width: 100%;
+    height: 100%;
+}
+
+.imageActividad img {
+    /*width: 100%;
+    height: auto; /* Hacemos que la altura se ajuste automáticamente para mantener la relación de aspecto */
+    object-fit: cover;
+    /* Ajustamos la imagen para cubrir completamente el contenedor circular */
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.topContainer {
+    display: flex;
+    justify-content: left;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.topContainer h2 {
+    color: #322272;
+    font-family: 'Montserrat-Extrabold', sans-serif;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+
+
+.activityData {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    color: #322272;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 0.8em;
+    width: 80%;
+}
+
+.topLeft {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.topRight {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.bottomLeft {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.bottomRight {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    text-align: right;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links a {
+    text-decoration: none;
+    color: #322272;
+    margin-bottom: 10%;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxContainer label {
+    display: block;
+    border: 2px solid #322272;
+    width: 1em;
+    height: 1em;
+    color: #322272;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.checkboxContainer input {
+    display: none;
+}
+
+.checkboxContainer input:checked+label {
+    background-color: #322272;
+}
+
+.checkboxContainer span {
+    color: #322272;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+
+.checkboxContainer p {
+    margin-left: auto;
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: auto;
+    color: #322272;
+    margin-Bottom: 5%;
+    border-radius: 10px;
+    text-align: justify;
+    height: 150px;
+    overflow-y: auto;
+}
+
+/* Personalización de la barra de desplazamiento */
+.scrollable-div::-webkit-scrollbar {
+    width: 12px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+    background: transparent;
+    /* Fondo transparente de la barra de desplazamiento */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    /* Color del thumb de la barra de desplazamiento, semi-transparente */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+    /* Color del thumb al pasar el mouse por encima, más oscuro para mejor visibilidad */
+}
+
+
+
+.memberContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.memberContainer h3 {
+    color: #322272;
+}
+
+.memberContainer p {
+    color: #322272;
+    align-items: right;
+}
+
+.memberContainer span {
+    color: #322272;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+
+.iframeContainer {
+    width: 100%;
+    height: 60vh;
+}
+
+.iframe {
+    width:65%;
+    height:100%;
+    top: 25%;
+    position: absolute;
+    transform-origin: 0 0;
+    scale: 0.65;
+    border: "1px solid #00000066";
+    border-radius: "0.5rem";
+}
+
+/* Estilos de tipografia montserrat */
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+}

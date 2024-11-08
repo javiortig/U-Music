@@ -1,0 +1,95 @@
+/* Estilo básico del pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: #000;
+}
+
+.imageContainer {
+    width:35%;
+    margin-right: 0%;
+} 
+
+.imageContainer img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imageTextContainer {
+    display: flex;
+}
+
+.messageContent {
+    margin-top: 8%;
+    margin-left: 1%;
+}
+
+.popupContent {
+    background: #cdcdcd;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    position: absolute;
+}
+  
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.inputLine {
+    margin-top: 5%;
+    border: none; 
+    border-bottom: 2px solid #000; 
+    color: rgba(0, 0, 0, 0.8);
+    background-color: transparent;  
+    width: 100%; 
+    outline: none;
+}
+
+.inputLine::placeholder {
+    color: #000000; 
+}
+  
+.inputLine:focus {
+    border-bottom: 2px solid #000; 
+}
+  
+.inputLine:focus::placeholder {
+    color: transparent; 
+}
+
+.sendButton {
+    margin-top: 5%;
+    background-color: transparent;
+    float: right;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+  
+/* Estilo del botón enviar */
+/* .popup-content button {
+    /* Estilos para tu botón de enviar 
+}   */
+
+/* Estilos de tipografia montserrat */
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/Montserrat-ExtraBold.ttf');
+}
+  
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+}

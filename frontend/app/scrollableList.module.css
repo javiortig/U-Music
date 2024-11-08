@@ -1,0 +1,36 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased !important;
+    color: #222;
+    margin: auto;
+    width: 400px;
+}
+  
+.footer {
+    margin: 50px 10px 0 10px;
+    padding: 10px;
+    border-top: #ddd solid 1px;
+}
+  
+.reactScrollableList {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    overflow-y: scroll;
+    border: #ddd solid 1px;
+}
+  
+.reactScrollableListItem {
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30%;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border-bottom: #ddd solid 1px;
+    color: rgb(0, 0, 0);
+}

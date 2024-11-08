@@ -1,0 +1,108 @@
+/* Estilo del home */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #322272;
+}
+
+.layout h1 {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #ffffff;
+    /*margin-top: 10%;*/
+    margin-bottom: 0;
+}
+
+.homeContent {
+  margin-top:0;
+  padding: 0 18%;
+  background-color: #322272;
+}
+
+
+.homeContent h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  color: #ffffff;
+  padding-top: 10%;
+  margin-bottom: 0;
+
+}
+
+.carousel{
+  display: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: radial-gradient(circle at center, #6E92E3, #322272); /* Crea un degradado radial */
+  width: 100%;
+  padding-left: 17%;
+}
+.home{
+  background-color: #322272;
+  align-items: center;
+  justify-content: center;
+  
+}
+.formGroup {
+  margin-top:5%;
+  justify-content: center;
+  align-items: center;
+  background-color: #322272;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  color:#ffffff
+}
+
+.cartaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    margin-top: 3%;
+}
+
+.searchBar {
+  width: 100%;
+  margin-top: 13vh;
+}
+
+.contenidoPopupCarousel {
+  width: 60%;
+  padding-top: 5%;
+  /*padding: 3% 3%; /* Espacio interno dentro del contenido */
+  text-align: center;
+  height: 100%;
+}
+
+.contenidoPopupCarousel p {
+  margin-bottom: 1em;
+}
+/*Linea divisoria del carrusel*/
+.divisoria {
+  width: 100%;
+  margin-top: 0%;
+  height: 0.2em;
+  /*border-top: 3px solid white; /* Grosor de la línea */
+  background: radial-gradient(circle at center, #ffffff, transparent);
+  /* Fondo solido en el centro y degradaddo en los bordes */
+  /* Espaciado superior e inferior */
+  position: relative;
+}
+
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/Montserrat-ExtraBold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+  }

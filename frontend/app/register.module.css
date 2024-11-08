@@ -1,0 +1,136 @@
+/*Estilo del Register*/
+
+.loginContainer {
+    background-image: url('/images/background-login-image.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loginBox {
+    background-color: #ffffff; 
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    justify-content: flex-start;
+    width: 35%;
+    height: 85%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 20px;
+  }
+  
+  .center {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .loginBox h1 {
+    margin-bottom: 10%;
+    margin-top: 30%;
+    color: #0066F3;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 5rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 10%;
+    text-align: left;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 2%;
+    color: #0066F3;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    text-size-adjust: 100%;
+    font-size:1.3em;
+    color:#0066F3;
+    /*padding: 10px;*/
+  }
+  
+  .inputLine {
+    border: none; 
+    border-bottom: 2px solid #0066F3; 
+    color: rgba(255, 255, 255, .8);
+    background-color: transparent;  
+    width: 100%; 
+    outline: none;
+  }
+  
+  /* Estilo para el marcador (placeholder) */
+  .inputLine::placeholder {
+    color: #0066F3; 
+  }
+  
+  .inputLine:focus {
+    border-bottom: 2px solid #0066F3; 
+  }
+  
+  .inputLine:focus::placeholder {
+    color: transparent; 
+  }
+  
+  .checkboxContainer {
+    display: flex; 
+    text-align: left;
+    align-items: left ; /* Alinear elementos horizontalmente pegados a la izquierda */
+  }
+  
+  .checkboxContainer label {
+    display: block;
+    border: 2px solid #0066F3;
+    width: 1em;
+    height: 1em;
+    color: #0066F3;
+    margin-right: 0.75em;
+  }
+  .checkboxContainer input {
+    display: none;
+  }
+  .checkboxContainer input:checked + label {
+    background-color: rgba(255, 255, 255, .8);
+  }
+  
+  .checkboxContainer span {
+    color: #0066F3;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .formGroup button {
+    width: 100%;
+    padding: 5%;
+    border: none;
+    border-radius: 10px;
+    background-color: #0066F3 ;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .formGroup button:hover {
+    background-color: #e5e9ec;
+  }
+  
+ 
+  
+  @font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/Montserrat-ExtraBold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+  }

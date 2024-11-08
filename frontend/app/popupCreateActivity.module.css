@@ -1,0 +1,199 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    
+}
+  
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /*max-height: 95%;*/
+    max-height: 95%;
+    max-width: 60%; /* Ajusta el ancho según tus necesidades */
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; /* Permitir desplazamiento si el contenido es demasiado largo */
+    border-radius: 8px;
+}
+/* Ocultar la barra de desplazamiento pero permitir el desplazamiento */
+.popup::-webkit-scrollbar {
+    width: 0; /* Ancho 0 para ocultar */
+  }
+  
+.imageTextSection {
+    border-bottom: 2px solid #322272;
+    padding-bottom: 2%; 
+    margin-bottom: 5%;
+    height: 10%;
+    color: #322272;
+}
+
+
+.imageTextSection button{
+    
+    background-color: #322272;
+    color: #322272;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+.imageTextSection input{
+    color: #322272;
+    padding-left: 1em;
+    height: 2em;
+    width: 50%;
+    margin: 1em;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1em;
+}
+
+.imageTextSection input:focus{
+    border: #322272;
+    color: #322272;
+}
+
+
+.links{
+    display: flex;
+    width: 15%;
+}
+
+.links a {
+    text-decoration: none;
+    color: #322272;
+    margin-left: 100%;
+    margin-right: 100%;
+    margin-bottom: 50%;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+
+
+
+.items p{
+    color: #322272;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-left: 0%;
+    text-align: left;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+
+
+.descripcion{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;  
+    resize: vertical;     
+}
+
+.selector{
+    display: flex;
+    color:#322272;
+}
+.selector input{
+    margin: 1em;
+    accent-color:#322272;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+
+}
+
+
+/*.imagen {
+    width: 90%;
+    flex-shrink: 0;  
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+*/
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:left;
+    margin-top: 1em;
+}
+.formGroup input{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 20%;
+    font-family: 'Montserrat-Regular', sans-serif;
+
+}
+.selectMulti{
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    width: 50%;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+
+}
+.formGroup button {
+    background-color: #322272 !important;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer !important;
+    width: 30%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 33%;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+
+}
+
+/* Personalización de la barra de desplazamiento */
+.scrollable-div::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+  
+.scrollable-div::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente de la barra de desplazamiento */
+}
+  
+.scrollable-div::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Color del thumb de la barra de desplazamiento, semi-transparente */
+}
+  
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4); /* Color del thumb al pasar el mouse por encima, más oscuro para mejor visibilidad */
+}
+
+/* Estilos de tipografia montserrat */
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/Montserrat-ExtraBold.ttf');
+}
+  
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+}

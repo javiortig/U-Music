@@ -1,0 +1,128 @@
+.navbar {
+    position: fixed;
+    justify-content: center;
+    height: 100vh;
+    width: 23%;
+    left: 0;
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%);
+    background-color: #322272;
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+    padding-top: 15%;
+    padding-left: 2%;
+    padding-right: 2%;
+    /*border-right: 1px solid #ccc;*/
+    z-index: 998; /* Asegurar que esté por encima del contenido */
+    cursor:pointer;
+}
+.groupPage{
+    display: flex;
+}
+.links{
+    margin-top:2%;
+    margin-bottom: 15%;
+}
+
+.links p {
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 1.5em;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+.links p:hover {
+    color: #6E92E3;
+}
+
+.paginaActual{
+    margin-top:2%;
+    margin-bottom: 15%;
+}
+
+.paginaActual p{
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 1.2em;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    border-left: 0.3em solid #ffffff;
+
+}
+
+
+
+.paginaActual p:hover {
+    color: #6E92E3;
+    border-left: 0.3em solid #6E92E3;
+}
+  
+.navbarChats {
+    position: fixed;
+    justify-content: center;
+    height: 100vh;
+    width: 23%;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: #322272;
+    padding-top: 13vh;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid #ccc;
+    z-index: 998; 
+    overflow-y: auto;
+}
+
+.navbarChats a {
+    padding: 11px 80px; 
+    font-size: 1em;
+    color: white; 
+    background-color: #150041;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    width: 50px;
+}
+
+/* Estilo personalizado para la barra de desplazamiento */
+.navbarChats::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.navbarChats::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; /* Añade redondez al "pulgar" */
+}
+
+.navbarChats::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.navbarChats::-webkit-scrollbar-button {
+    display: none; /* Esto ocultará las flechas de desplazamiento */
+}
+
+.searchBar {
+    flex: 1;
+    padding: 10px;
+}
+
+.searchInput {
+    background-color: #00000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    outline: none;
+    width: 300px;
+    font-size: 16px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.linkChat {
+    position: fixed;
+    bottom: 2vh;
+}

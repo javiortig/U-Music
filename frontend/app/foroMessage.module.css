@@ -1,0 +1,97 @@
+.messageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 60em;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 2%;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.imageTextSection {
+    text-align: left;
+    width: 100%;
+}
+
+.imageContainer {
+    width: auto;
+    margin-right: 5%;
+} 
+
+.imageContainer img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imageTextContainer {
+    display: flex;
+    align-items: center;
+}
+
+.messageContent {
+    color: #150041;
+    width: 100%;
+    text-align: justify;
+}
+  
+.username {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.answerContainer {
+    display: flex;
+    gap: 1px;
+    width: 100%;
+    max-width: 920px;
+    margin-top: 2%;
+    justify-content: center;
+}
+  
+.answerContainer input {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    height: 2.7rem;
+    align-self: center;
+}
+  
+.answerContainer button {
+    padding: 10px 20px;
+    background-color: #322272;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.answerContainer button:hover {
+    background-color: #135a78;
+}
+
+.answer {
+    width: 100%;
+    text-align: justify;
+    margin-top: 1.5em;
+    padding: 2%;
+    background-color: #f1f1f1;
+}
+
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/Montserrat-ExtraBold.ttf');
+}
+  
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf');
+}  

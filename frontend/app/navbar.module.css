@@ -1,0 +1,78 @@
+/* Estilo del Navbar */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  height: 13vh;
+  width: 100%;
+  align-items: center;
+  background-color: #150041; 
+  border-bottom: 2px solid #150041; /* Línea debajo del navbar */
+  /*padding: 1em 2em; /* Ajustes de espaciado dentro del Navbar */
+  box-shadow: 0 5px 4px rgba(255, 255, 255, 0.1); /* Sombra del Navbar */
+  z-index: 999; /* Para que el Navbar esté por encima de otros elementos */
+}
+ 
+.navbar a {
+  
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left;
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+
+
+
+/*.navbar a:hover {
+  border-bottom: 2px solid #0066F3; 
+}*/
+
+.links{
+  display: flex;
+  align-items: center;
+  width: 15%;
+
+}
+.link{
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  display: block;
+  text-align: center; /* Centra horizontalmente */
+
+}
+
+
+.paginaActual a{
+  border-top: #ffffff 0.3em solid;
+  color: #ffffff;
+  width: 100%;
+}
+
+.perfil{
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+  width: 7%;
+  margin-right: 0px;
+
+}
+.imgPerfil{
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  display: block;
+  text-align: right; /* Centra horizontalmente */
+}
+
+/* Estilos de tipografia montserrat */
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('/fonts/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('/fonts/Montserrat-Regular.ttf');
+}

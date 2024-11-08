@@ -1,0 +1,778 @@
+//--------- REGISTRO POR EMAIL ----------
+### 
+POST http://localhost:3000/api/auth/verification-email/lara.loira@live.u-tad.com
+
+###
+POST http://localhost:3000/api/auth/verification-email/juan.benlloch@live.u-tad.com
+
+### 
+POST http://localhost:3000/api/auth/verification-email/alexander.bas@live.u-tad.com
+
+
+//--------- REGISTRO POR EMAIL ----------
+### 
+POST http://localhost:3000/api/auth/verification-email/manuel.pelaez@live.u-tad.com
+
+
+#### 
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJpYXQiOjE3MTAyODU4NTcsImV4cCI6MTcxMDI5MzA1N30.euYCMuu0dIBsgTka1HmwhDOuMCliEWOiQ4y3WiWakaY
+
+{
+  "nickname": "alexxx",
+  "password": "Alex12345",
+  "bio": "MAIS",
+  "instruments": ["Guitarra", "Batería", "Bajo"],
+  "availabilitySchedule": {
+    "monday": ["9-11","11-13"],
+    "tuesday": ["9-11", "11-13"],
+    "wednesday": ["9-11", "11-13"],
+    "thursday": ["11-13"],
+    "friday": ["11-13"],
+    "saturday": [],
+    "sunday": []
+  },
+  "receiveNotifications": true
+}
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJpYXQiOjE3MTIyNTIyNDAsImV4cCI6MTcxMjI1OTQ0MH0.A1zqK7IC2MY7qWw87OVveKR2UnfGFt7IR1SjiwWiM_c
+
+{
+  "name": "Joan ",
+  "nickname": "joanbg",
+  "password": "Password1234",
+  "bio": "MAIS",
+  "instruments": ["Guitarra", "Batería", "Bajo"],
+ "availabilitySchedule": {
+    "monday": ["9-11","11-13"],
+    "tuesday": ["9-11", "11-13"],
+    "wednesday": ["9-11", "11-13"],
+    "thursday": ["11-13"],
+    "friday": ["11-13"],
+    "saturday": [],
+    "sunday": []
+  },
+  "receiveNotifications": true
+  "receiveNotifications": true
+}
+//"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWRiMDU1MjY4YThlZDEyNTA5NDFiYjgiLCJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImpvYW5iZyIsImlhdCI6MTcwODg1MjU2MiwiZXhwIjoxNzA4ODU5NzYyfQ.30sPEuyWIVt1wKPVlR0Oy-8iuhwMVhUlb5ZuP9ryaD4"
+
+### 
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJpYXQiOjE3MTI1ODE0NDEsImV4cCI6MTcxMjU4ODY0MX0.JIwDl4X3yM6ST5ArA3cyxhp4zayl9SvO85YgBWdzPtQ
+
+{
+  "name": "Alexander Bas",
+  "nickname": "alexxx",
+  "password": "Alex1234",
+  "bio": "MAIS",
+  "instruments": ["Batería", "Bajo", "Guitarra","piano","flauta"],
+  "availabilitySchedule": {
+    "monday": ["9-11","11-13"],
+    "tuesday": ["9-11", "11-13"],
+    "wednesday": ["9-11", "11-13"],
+    "thursday": ["11-13"],
+    "friday": ["11-13"],
+    "saturday": [],
+    "sunday": []
+  },
+  "receiveNotifications": true
+}
+
+### 
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxhcmEubG9pcmFAbGl2ZS51LXRhZC5jb20iLCJ0b2tlblR5cGUiOiJlbWFpbCIsImlhdCI6MTcxNTI2OTU3MSwiZXhwIjoxNzE1Mjc2NzcxfQ.nJK32Y-eD1FnKR7aVPHSRJC2kFTRgPWVAeWOa-ZYkWQ
+
+{
+  "name": "Lara Loira Garrido",
+  "nickname": "lara.loira",
+  "password": "GALICIA123",
+  "bio": "MAIS",
+  "instruments": ["piano"],
+  "availabilitySchedule": {
+    "monday": ["9-11","11-13"],
+    "tuesday": ["9-11", "11-13"],
+    "wednesday": ["9-11", "11-13"],
+    "thursday": ["11-13"],
+    "friday": ["11-13"],
+    "saturday": [],
+    "sunday": []
+  },
+  "receiveNotifications": true
+}
+
+//--------- LOGIN ----------
+### 
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "ana.secretaria@u-tad.com",
+  "password": "Ana12345"
+}
+
+//--------- LOGIN ----------
+### 
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "manuel.pelaez@live.u-tad.com",
+  "password": "Manu1234"
+}
+
+//--------- LOGIN ----------
+### 
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "juan.benlloch@live.u-tad.com",
+  "password": "Password1234"
+}
+
+//--------- LOGIN ----------
+### 
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "alexander.bas@live.u-tad.com",
+  "password": "Alex1234"
+}
+
+
+
+//--------- CREANDO POSTS ----------
+# Post en el foro general
+###
+POST http://localhost:3000/api/posts/createPost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU0ZTEzNTVhNGM4Njc5ZjhmZGQxMTQiLCJlbWFpbCI6Im1hbnVlbC5wZWxhZXpAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6Im1hbnVwZGxyIiwiaWF0IjoxNzEyNDA1Njc5LCJleHAiOjE3MTI0MTI4Nzl9.IaximmGLwEWPqFzzruyShIHorDutKaVsPErKJ2Jg_bY
+
+{
+    "title": "Materiales U-Tad",
+    "content": "Hola a todos, ¿Sabeis que materiales podría proporcionar la u-tad para las actividades? Que tipos de instrumentos y material audiovisual como cámaras, micrófonos, etc. Gracias!",
+    "activity": "general",
+    "tag": ["instrumentos", "material", "u-tad", "clases"]
+}
+
+# Post en una actividad---------------------------------
+###
+POST http://localhost:3000/api/posts/createPost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU0ZTEzNTVhNGM4Njc5ZjhmZGQxMTQiLCJlbWFpbCI6Im1hbnVlbC5wZWxhZXpAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6Im1hbnVwZGxyIiwiaWF0IjoxNzEzMTk2ODU3LCJleHAiOjE3MTMyMDQwNTd9.gAYjcJpVasqT6nIWHbcEIUUyldWkZBfd7TmPTzwsIU4
+
+{
+    "content": "Puedo llevar un triángulo a la próxima clase? Gracias!",
+    "activity": "661c377202ad3a31f264243b",
+    "tag": ["instrumentos", "triángulo"]
+}
+
+
+
+### Obtener los posts 
+GET http://localhost:3000/api/posts/getPostsByActivity/general
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTM1MzM5ODEsImV4cCI6MTcxMzU0MTE4MX0.EXX-uCUjwAFwtbR76IRc1c622vmQnm0J-EltyFdKPkg
+
+###
+GET http://localhost:3000/api/posts/getPostsByTag?tag=jazz,rock
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTM1MzM5ODEsImV4cCI6MTcxMzU0MTE4MX0.EXX-uCUjwAFwtbR76IRc1c622vmQnm0J-EltyFdKPkg
+
+### obtener un post del chat general y todas sus respuestas
+GET http://localhost:3000/api/posts/getPostsAndAnswers/66113d74b2dcbd247ca51787
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTM1MzM5ODEsImV4cCI6MTcxMzU0MTE4MX0.EXX-uCUjwAFwtbR76IRc1c622vmQnm0J-EltyFdKPkg
+
+###
+//Updateando un Post
+PUT http://localhost:3000/api/posts/updatePost/65d75a5fba4b8f1cb654dbb9
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2MTA0MTAxYzUxYzQzMGQ0MGRkMmYiLCJlbWFpbCI6ImFuZS5zYWhhQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFncyIsImlhdCI6MTcwODYxMjE2NywiZXhwIjoxNzA4NjE5MzY3fQ.-aJL8jOvm_0JUQgAo_OUlQ9bKqN3lkPO69PTB1QYp4c
+
+{
+    "tag": ["piano"]
+}
+
+
+
+###
+//Borrando un Post
+DELETE http://localhost:3000/api/posts/deletePost/65d63e77ab59a2b77c8e9a9a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2MTA0MTAxYzUxYzQzMGQ0MGRkMmYiLCJlbWFpbCI6ImFuZS5zYWhhQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFncyIsImlhdCI6MTcwODYxMjE2NywiZXhwIjoxNzA4NjE5MzY3fQ.-aJL8jOvm_0JUQgAo_OUlQ9bKqN3lkPO69PTB1QYp4c
+
+###
+//Obteniendo  Posts por su tag
+GET http://localhost:3000/api/posts/getPostsByTag/guitar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2MTA0MTAxYzUxYzQzMGQ0MGRkMmYiLCJlbWFpbCI6ImFuZS5zYWhhQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFncyIsImlhdCI6MTcwODYxMjE2NywiZXhwIjoxNzA4NjE5MzY3fQ.-aJL8jOvm_0JUQgAo_OUlQ9bKqN3lkPO69PTB1QYp4c
+
+
+###
+//AHORA LLAMANDO A LOS ENDPOINTS DE ANSWERS --- ANSWERS SOLO PARA EL FORO GENERAL, EL FORO 
+
+###
+POST http://localhost:3000/api/answers/createAnswer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTI0MTgyMzYsImV4cCI6MTcxMjQyNTQzNn0._GN2rywkslU9pJMDG7sKd9tsGunr-3m-bRMoqi9U220
+
+{
+    "content": "Si, la u-tad proporciona instrumentos de todo tipo, desde guitarras, pianos, baterías, hasta instrumentos de viento y percusión. También disponemos de material audiovisual como cámaras, micrófonos, etc.",
+    "postId": "66113d74b2dcbd247ca51787"
+}
+
+
+###
+//obteniendo todos los Answers por Post
+GET http://localhost:3000/api/answers/getAnswersByPost/66113d74b2dcbd247ca51787
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTM1MzM5ODEsImV4cCI6MTcxMzU0MTE4MX0.EXX-uCUjwAFwtbR76IRc1c622vmQnm0J-EltyFdKPkg
+
+###
+//Updateando un Answer
+PUT http://localhost:3000/api/answers/updateAnswer/66116e4521e13bacb38619cd
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTI0MTgyMzYsImV4cCI6MTcxMjQyNTQzNn0._GN2rywkslU9pJMDG7sKd9tsGunr-3m-bRMoqi9U220
+Content-Type: application/json
+
+{
+    "content": "Disponemos de todo tipo de material audiovisual, pero no de instrumentos. Depende de lo que necesite puedes mandarnos un correo de antemano y veremos lo que podemos hacer. Un saludo :)"
+}
+
+###
+//Borrando un Answer
+DELETE http://localhost:3000/api/answers/deleteAnswer/65ce6102ab558e44d50c8591
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTI0MTgyMzYsImV4cCI6MTcxMjQyNTQzNn0._GN2rywkslU9pJMDG7sKd9tsGunr-3m-bRMoqi9U220
+
+
+
+
+//--------- GET DEL USUARIO ----------
+###
+GET http://localhost:3000/api/users/getUserProfile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWRiMDU1MjY4YThlZDEyNTA5NDFiYjgiLCJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImpvYW5iZyIsImlhdCI6MTcxMDQzNjU0OCwiZXhwIjoxNzEwNDQzNzQ4fQ.ejBtgiyHakqRm4CGopa4dAjRNat51Zq13XwwRwWd5Mw
+
+//--------- UPDATE DEL USUARIO ----------
+###
+PUT http://localhost:3000/api/users/updateUserProfile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2MzY0MjFkMDUwODA4Y2FmYWM3NTkiLCJlbWFpbCI6Im5hdGFsaWEuZ2FyY2lhQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJuYXRpbmF0IiwiaWF0IjoxNzA4NTM3NDEwLCJleHAiOjE3MDg1NDQ2MTB9.jb2olmJHE1GJAljqUQCMsWFbX09OWXTqLOv414JQTec
+
+{
+  "name": "Ana Isabel"
+}
+//--------- UPDATE DEL USUARIO ----------
+###
+PUT http://localhost:3000/api/users/updateUserProfile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBmZDc0ZDE1NjQyZTEyMTFjMDE3MGUiLCJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImpvYW4iLCJpYXQiOjE3MTI0OTkyMjQsImV4cCI6MTcxMjUwNjQyNH0.f5_3XQPK9MsNQavxNKHu98ZD9tzoOgTtwXOWlL90hEI
+
+{
+  "availabilitySchedule": {
+    "monday": ["9-11","11-13"],
+    "tuesday": ["9-11", "11-13"],
+    "wednesday": ["9-11", "11-13"],
+    "thursday": ["11-13"],
+    "friday": ["11-13"],
+    "saturday": [],
+    "sunday": []
+  }
+}
+
+
+
+//--------- DELETE DEL USUARIO ----------
+###
+DELETE http://localhost:3000/api/users/deleteUserProfile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2MzY0MjFkMDUwODA4Y2FmYWM3NTkiLCJlbWFpbCI6Im5hdGFsaWEuZ2FyY2lhQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJuYXRpbmF0IiwiaWF0IjoxNzA4NTM3NDEwLCJleHAiOjE3MDg1NDQ2MTB9.jb2olmJHE1GJAljqUQCMsWFbX09OWXTqLOv414JQTec
+
+
+//--------- UPDATE PASSWORD DEL USUARIO ----------
+###
+PUT http://localhost:3000/api/users/updateUserPassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcwOTMwMTY0MiwiZXhwIjoxNzA5MzA4ODQyfQ.GrtKq_EYVUUaFqt8FkYcgO3y5JHCbfZImIIFCT99jMU
+
+{
+  "password": "Anita1234"
+}
+
+//--------- UPDATE PASSWORD DEL USUARIO ----------
+###
+PUT http://localhost:3000/api/users/updateUserPassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcwOTMwMTY0MiwiZXhwIjoxNzA5MzA4ODQyfQ.GrtKq_EYVUUaFqt8FkYcgO3y5JHCbfZImIIFCT99jMU
+
+{
+  "password": "Password123"
+}
+
+###
+// checking nickname
+GET http://localhost:3000/api/users/checkNickname/anaig
+
+###
+// update image to user
+PUT http://localhost:3000/api/users/updateUserImage
+Content-Type: multipart/form-data; boundary=Boundry
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcxMDI4NzI4NywiZXhwIjoxNzEwMjk0NDg3fQ.Fs71Dmgu5J0hxI77UQdmSR-P-wWxlukly3RK577PZ8E
+
+--Boundry
+Content-Disposition: form-data; name="image"; filename="naruto2.jpg"
+
+< ./naruto.jpg >
+--Boundry--
+
+### 
+/// GET ALL USERS
+GET http://localhost:3000/api/users/getAllUsers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWRiMDU1MjY4YThlZDEyNTA5NDFiYjgiLCJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImpvYW5iZyIsImlhdCI6MTcxMDQzNjU0OCwiZXhwIjoxNzEwNDQzNzQ4fQ.ejBtgiyHakqRm4CGopa4dAjRNat51Zq13XwwRwWd5Mw
+
+###
+// Get filtered users
+GET http://localhost:3000/api/users/getFilteredUsers?instrument=guitarra&nickname=a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWRiMDU1MjY4YThlZDEyNTA5NDFiYjgiLCJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImpvYW5iZyIsImlhdCI6MTcwOTk5ODU4OCwiZXhwIjoxNzEwMDA1Nzg4fQ.0m2MrV61iGN8rNOht9meqE_neOQoADHq5b1JqzUaLak
+
+###
+// Get another user profile
+GET http://localhost:3000/api/users/getAnotherUserProfile/65d77b43f3f8278f6edca8a5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWRiMDU1MjY4YThlZDEyNTA5NDFiYjgiLCJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImpvYW5iZyIsImlhdCI6MTcwOTk5ODU4OCwiZXhwIjoxNzEwMDA1Nzg4fQ.0m2MrV61iGN8rNOht9meqE_neOQoADHq5b1JqzUaLak
+
+###
+//--------- GET de actividades ---------- OPEN, NOT COMPLETO O TERMINADAS, MAS RECIENTES
+GET http://localhost:3000/api/activity/getActivities
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjI4NDIsImV4cCI6MTcxMzEzMDA0Mn0.m04qjHkdvMJNE44yt5t_tpU5ZEx7UrHBK4kx186_Mnk
+
+###
+//--------- POST de crear ACTIVIDAD ABIERTA ----------
+POST http://localhost:3000/api/activity/createActivity
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjEzZWI3OWE4ZmRhZDVkMzIzNzQ5NWEiLCJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImFsZXh4eCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzEyNTgxNDk3LCJleHAiOjE3MTI1ODg2OTd9.pRWLg2jpG_1alN5Yb8UMiFYyL9Kj6ZB3ToEi2fKa4Zc
+
+{
+  "title": "multiinstrumental jam session private",
+  "description": "Tocaremos varias canciones de improvisación",
+  "total_places": 15,
+  "type": "closed",
+  "genre": ["jazz", "blues", "rock"],
+  "recurrent": true,
+  "users": [
+    {
+      "username": "joan",
+      "instrument": "guitarra"
+    }
+  ],
+  "instruments":["Guitarra", "Piano", "Batería", "Bajo"],
+  "sessions": [
+    {
+      "date": "13/04/2024",
+      "time_slot": "11-13"
+    },
+    {
+      "date": "20/04/2024",
+      "time_slot": "11-13"
+    }
+  ]
+}
+
+
+###
+//--------- POST de crear ACTIVIDAD ABIERTA ----------
+POST http://localhost:3000/api/activity/createActivity
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjEzZWI3OWE4ZmRhZDVkMzIzNzQ5NWEiLCJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImFsZXh4eCIsImlhdCI6MTcxMzEyNTIwNiwiZXhwIjoxNzEzMTMyNDA2fQ.X1XbNFhJRE75vyIonhNI-2LlAJmqD4wKXAR-s59Rl-k
+
+{
+  "title": "Percusión",
+  "description": "Sesión de improvisación de instrumentos de percusión",
+  "total_places": 6,
+  "type": "open",
+  "genre": ["clasica", "orquesta"],
+  "recurrent": true,
+  "users": [],
+  "instruments":["maracas", "castañuelas", "cencerros", "bongos"],
+  "sessions": [
+    {
+      "date": "06/05/2024",
+      "time_slot": "09-11"
+    },
+    {
+      "date": "07/05/2024",
+      "time_slot": "11-13"
+    },
+    {
+      "date": "08/05/2024",
+      "time_slot": "13-15"
+    },
+    {
+      "date": "09/05/2024",
+      "time_slot": "15-17"
+    },
+    {
+      "date": "10/05/2024",
+      "time_slot": "17-19"
+    },
+    {
+      "date": "10/05/2024",
+      "time_slot": "19-21"
+    }
+  ]
+}
+
+
+
+
+
+###
+//--------- POST de crear ACTIVIDAD ABIERTA ----------
+POST http://localhost:3000/api/activity/createActivity
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTI0MDYyODMsImV4cCI6MTcxMjQxMzQ4M30.VauoprDuGS8uDfHdvdwaQVs5cCrlkSBXr2n_C7_ibnQ
+
+{
+  "title": "Guitarra para principiantes",
+  "description": "Guitarrista profesional dará clases de guitarra para principiantes",
+  "total_places": 5,
+  "type": "open",
+  "genre": ["jazz", "blues", "rock"],
+  "recurrent": true,
+  "users": [],
+  "instruments":["guitarra"],
+  "sessions": [
+    {
+      "date": "11/04/2024",
+      "time_slot": "17-19"
+    },
+    {
+      "date": "18/04/2024",
+      "time_slot": "17-19"
+    },
+    {
+      "date": "24/04/2024",
+      "time_slot": "17-19"
+    },
+    {
+      "date": "01/05/2024",
+      "time_slot": "17-19"
+    }
+  ]
+}
+
+
+###
+//--------- POST de crear ACTIVIDAD ABIERTA ----------
+POST http://localhost:3000/api/activity/createActivity
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjUxMjAsImV4cCI6MTcxMzEzMjMyMH0.NbKmIO8IJzHt6gV80-Tj47mopkHO-RMrYCa2effLRbI
+
+{
+  "title": "Concierto privado de flauta",
+  "description": "Concierto de flauta del famoso flautista de Hamelín, posteriormente habrá una masterclass",
+  "total_places": 20,
+  "type": "open",
+  "genre": ["jazz"],
+  "recurrent": false,
+  "users": [],
+  "instruments":["flauta"],
+  "sessions": [
+    {
+      "date": "05/05/2024",
+      "time_slot": "19-21"
+    }
+  ]
+}
+
+###
+//--------- POST de crear ACTIVIDAD ABIERTA ----------
+POST http://localhost:3000/api/activity/createActivity
+Content-Type: application/json
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjI4NDIsImV4cCI6MTcxMzEzMDA0Mn0.m04qjHkdvMJNE44yt5t_tpU5ZEx7UrHBK4kx186_Mnk
+{
+  "title": "Clasical session",
+  "description": "Sesión de música clasica. Mozart, Beethoven y Bach. Tocaremos varias piezas de cada uno",
+  "total_places": 10,
+  "type": "open",
+  "genre": ["clasica"],
+  "recurrent": false,
+  "users": [],
+  "instruments":["piano", "violin", "chelo", "flauta"],
+  "sessions": [
+    {
+      "date": "16/04/2024",
+      "time_slot": "9-11"
+    }
+  ]
+}
+
+
+###
+//--------- POST de crear ACTIVIDAD CERRADA ----------
+POST http://localhost:3000/api/activity/createActivity
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjI4NDIsImV4cCI6MTcxMzEzMDA0Mn0.m04qjHkdvMJNE44yt5t_tpU5ZEx7UrHBK4kx186_Mnk
+
+{
+  "title": "Clase de guitarra para principiantes",
+  "description": "Clase de guitarra para principiantes",
+  "total_places": 2,
+  "type": "closed",
+  "genre": ["jazz", "blues"],
+  "recurrent": false,
+  "users": [
+    {
+      "username": "manupdlr",
+      "instrument": "guitarra"
+    }
+  ],
+  "instruments": ["guitarra"],
+  "sessions": [
+    {
+      "date": "25/04/2024",
+      "time_slot": "15-17"
+    }
+  ]
+}
+
+###
+//--------- POST de crear ACTIVIDAD ABIERTA ----------
+POST http://localhost:3000/api/activity/createActivity
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjI4NDIsImV4cCI6MTcxMzEzMDA0Mn0.m04qjHkdvMJNE44yt5t_tpU5ZEx7UrHBK4kx186_Mnk
+
+{
+  "title": "Clase de bajo GRUPAL para principiantes",
+  "description": "Clase de bajo para principiantes",
+  "total_places": 5,
+  "type": "open",
+  "genre": ["jazz", "blues"],
+  "recurrent": false,
+  "users": [],
+  "instruments": ["bajo"],
+  "sessions": [
+    {
+      "date": "23/04/2024",
+      "time_slot": "15-17"
+    }
+  ]
+}
+
+
+###
+//--------- GET actividad por ID ----------
+GET http://localhost:3000/api/activity/getActivity/661c31412c98bfae95186c57
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjI4NDIsImV4cCI6MTcxMzEzMDA0Mn0.m04qjHkdvMJNE44yt5t_tpU5ZEx7UrHBK4kx186_Mnk
+
+###
+//--------- GET actividades recomendadas ---------- POR INSTRUMENTO Y HORARIO DE DISPONIBILIDAD
+GET http://localhost:3000/api/activity/getRecommendedActivities
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTM3Mjk2NDIsImV4cCI6MTcxMzczNjg0Mn0.HPPAJ374PWJiWF1cUfeBpLWjzQ5bwh2JQiA2mpfxB5I
+
+###
+//--------- GET de actividades hechas por un admin del sistema ORDENADAS POR FECHA RECIENTE----------
+GET http://localhost:3000/api/activity/getImportantActivities
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTM3Mjk2NDIsImV4cCI6MTcxMzczNjg0Mn0.HPPAJ374PWJiWF1cUfeBpLWjzQ5bwh2JQiA2mpfxB5I
+
+###
+//--------- GET de actividades hechas por el propio usuario (PARA EL PERFIL) ORDENADAS POR FECHA RECIENTE----------
+GET http://localhost:3000/api/activity/getCreatedActivitiesProfile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjI4NDIsImV4cCI6MTcxMzEzMDA0Mn0.m04qjHkdvMJNE44yt5t_tpU5ZEx7UrHBK4kx186_Mnk
+
+###
+//--------- GET de actividades en las que el propio usuario está apuntado (PARA EL PERFIL) ORDENADAS POR FECHA RECIENTE----------
+GET http://localhost:3000/api/activity/getMyActivitiesProfile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcxMTMxMDg0OCwiZXhwIjoxNzExMzE4MDQ4fQ.jgz6IN5VV-TOn1S41uMDHXoUhn0PMuMBp65Nt0YLt-o
+
+
+###
+# GET de actividades FILTRADAS state, genre, instrument, creator A LA VEZ (BUSCADOR), OPEN
+GET http://localhost:3000/api/activity/getFilteredActivities?state=plazas%20disponibles&instruments=guitarra&genre=jazz&creator=anaigs22&title=foto
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcxMTMxMDg0OCwiZXhwIjoxNzExMzE4MDQ4fQ.jgz6IN5VV-TOn1S41uMDHXoUhn0PMuMBp65Nt0YLt-o
+
+
+###
+GET http://localhost:3000/api/activity/getFilteredActivities
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTM3Mjk2NDIsImV4cCI6MTcxMzczNjg0Mn0.HPPAJ374PWJiWF1cUfeBpLWjzQ5bwh2JQiA2mpfxB5I
+
+
+###
+GET http://localhost:3000/api/activity/getActivitiesWithoutReservations
+
+###
+// MISMO QUE ANTERIOR PERO SOLO METIENDO GENRE Y INSTRUMENT (no hace falta meter todos los parametros)
+# GET de actividades filtradas state, genre, instrument, creator A LA VEZ (BUSCADOR), OPEN
+GET http://localhost:3000/api/activity/getFilteredActivities?state=terminado
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTMxMjI4NDIsImV4cCI6MTcxMzEzMDA0Mn0.m04qjHkdvMJNE44yt5t_tpU5ZEx7UrHBK4kx186_Mnk
+
+###
+// TIPO DE ORDEN 
+# GET de actividades por sortedby
+GET http://localhost:3000/api/activity/getFilteredActivities?sortedby=ZA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcxMjE1MTYwMywiZXhwIjoxNzEyMTU4ODAzfQ._jjt1dkH3xmXLPUacA3jWBgyHmdKl-8i5L0FkoNnI4A
+
+
+###
+// MISMO QUE ANTERIOR PERO PROBANDO POR FECHA
+# GET de actividades filtradas
+GET http://localhost:3000/api/activity/getFilteredActivities?date=sunday&time=11-13
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcxMDI1OTQzNSwiZXhwIjoxNzEwMjY2NjM1fQ.Ek6lSz0bAOz4r_qdy4OabGVZUWRRJlU6DGycUsGdSBs
+
+
+###
+// MISMO QUE ANTERIOR PERO PUDIENDO METER VARIOS INSTRUMENT Y GENRE (no hace falta meter todos los parametros)
+# GET de actividades filtradas (BUSCADOR), OPEN
+GET http://localhost:3000/api/activity/getFilteredActivities?instruments=guitarra,piano&genres=jazz,rock
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcxMTMxMDg0OCwiZXhwIjoxNzExMzE4MDQ4fQ.jgz6IN5VV-TOn1S41uMDHXoUhn0PMuMBp65Nt0YLt-o
+
+
+### 
+# DELETE ACTIVIDAD POR ID
+DELETE http://localhost:3000/api/activity/deleteActivity/65e4ec755a4c8679f8fdd119
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zYWhhZ3VuQGxpdmUudS10YWQuY29tIiwibmlja25hbWUiOiJhbmFpZ3MyMiIsImlhdCI6MTcwOTkxNDI0OSwiZXhwIjoxNzA5OTIxNDQ5fQ.VZJVuRHFX1vGmcJGRCEbx4-4FojxoTFfd30z53hCQ3A
+
+
+###
+# PUT para actualizar una actividad (PUBLICA) en las actividades públicas los users no se actualizan
+PUT http://localhost:3000/api/activity/updateActivity/661130c2f110b629748ee365
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU0ZTEzNTVhNGM4Njc5ZjhmZGQxMTQiLCJlbWFpbCI6Im1hbnVlbC5wZWxhZXpAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6Im1hbnVwZGxyIiwiaWF0IjoxNzEyNDAxOTg2LCJleHAiOjE3MTI0MDkxODZ9.mJpr5hPcr-MvRoDh2lPt46q_6fJRTRI_uPdYIKZEA4Y
+
+{
+    "title": "Improvisación de percusión",
+    "description": "Haremos una sesión de improvisación con instrumentos de percusión, podeis meteros si tocais algún otro instrumento de percusión. Se aceptan ideas."
+}
+
+
+###
+# PUT para actualizar una actividad (PRIVADA) aqui si se pueden actualizar los users 
+// También vemos que no hace falta actualizar todos los campos de la actividad (preferencia del front)
+PUT http://localhost:3000/api/activity/updateActivity/6613f0a9889c740eec324ee6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjEzZWI3OWE4ZmRhZDVkMzIzNzQ5NWEiLCJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImFsZXh4eCIsImlhdCI6MTcxMjU4Njg4OSwiZXhwIjoxNzEyNTk0MDg5fQ.jng8tTeaKpHNObQoUc84pFyOYSdiNgC6lhJuxlbnOaA
+
+{
+    "title": "Clase multiclase de todo tipo de instrumentoss",
+    "users": [
+      {
+        "username": "manupdlr",
+        "instrument": "guitarra"
+      }, 
+      {
+        "username": "anaigs22",
+        "instrument": "guitarra"
+      },
+      {
+        "username": "alexxx",
+        "instrument": "guitarra"
+      }
+   ]
+}
+
+
+###
+# PUT para cuando un usuario se une a una actividad publica
+PUT http://localhost:3000/api/activity/addUserToActivity/661c377202ad3a31f264243b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU0ZTEzNTVhNGM4Njc5ZjhmZGQxMTQiLCJlbWFpbCI6Im1hbnVlbC5wZWxhZXpAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6Im1hbnVwZGxyIiwiaWF0IjoxNzEzMTI1NDI0LCJleHAiOjE3MTMxMzI2MjR9.AKUYSGxnsBrTJCP7-L4RvLSmgCwABdUFOVwI2qZzmpE
+
+{
+    "instrument": "triangulo"
+}
+
+
+### 
+//Eliminar actividad 
+DELETE http://localhost:3000/api/activity/deleteActivity/6613f7924d91eaeda5a4fbc5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjEzZWI3OWE4ZmRhZDVkMzIzNzQ5NWEiLCJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImFsZXh4eCIsImlhdCI6MTcxMjU4Njg4OSwiZXhwIjoxNzEyNTk0MDg5fQ.jng8tTeaKpHNObQoUc84pFyOYSdiNgC6lhJuxlbnOaA
+
+###
+
+# PUT para cuando un usuario se va de una actividad
+PUT http://localhost:3000/api/activity/deleteUserFromActivity/660e7f13443f59218cec954b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTI0MDQyMzQsImV4cCI6MTcxMjQxMTQzNH0.LeN6Dne_DSJ48txddMQNxho1SpIGBHFhjPSTyli3K68
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+//------------------------RESERVAS---------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+
+###
+# Obtener todas las reservas de una actividad
+GET http://localhost:3000/api/reservations/getAllReservationsFromActivity/661c31412c98bfae95186c57
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTQ1MDA2NzEsImV4cCI6MTcxNDUwNzg3MX0.VFB7hRotAeDIDtVdNCuG5p7lLAKyHVlnZ8Vr1emIIcE
+
+###
+# Actualizar una reserva
+PUT http://localhost:3000/api/reservations/updateReservation/661c31412c98bfae95186c5a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxZGU4NmMzNGNkNGNjNzVkOTJhYmUiLCJlbWFpbCI6ImFuYS5zZWNyZXRhcmlhQHUtdGFkLmNvbSIsIm5pY2tuYW1lIjoiYW5hLnNlY3JldGFyaWEiLCJpYXQiOjE3MTQ1MDA2NzEsImV4cCI6MTcxNDUwNzg3MX0.VFB7hRotAeDIDtVdNCuG5p7lLAKyHVlnZ8Vr1emIIcE
+Content-Type: application/json
+
+{
+    "time_slot": "17-19"
+}
+
+
+###
+# Añadir una reserva a una actividad
+POST http://localhost:3000/api/reservations/addReservation/661130c2f110b629748ee365
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU0ZTEzNTVhNGM4Njc5ZjhmZGQxMTQiLCJlbWFpbCI6Im1hbnVlbC5wZWxhZXpAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6Im1hbnVwZGxyIiwiaWF0IjoxNzEyNDAxOTg2LCJleHAiOjE3MTI0MDkxODZ9.mJpr5hPcr-MvRoDh2lPt46q_6fJRTRI_uPdYIKZEA4Y
+Content-Type: application/json
+
+{
+    "date": "13/05/2024",
+    "time_slot": "19-21"
+
+}
+
+
+###
+//--------- GET actividad por ID ----------
+GET http://localhost:3000/api/activity/getActivity/65eb469dbb11454dde719bfc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU0ZTEzNTVhNGM4Njc5ZjhmZGQxMTQiLCJlbWFpbCI6Im1hbnVlbC5wZWxhZXpAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6Im1hbnVwZGxyIiwiaWF0IjoxNzEyNDAxOTg2LCJleHAiOjE3MTI0MDkxODZ9.mJpr5hPcr-MvRoDh2lPt46q_6fJRTRI_uPdYIKZEA4Y
+
+
+###
+
+# Eliminar una reserva
+DELETE http://localhost:3000/api/reservations/deleteReservation/661130c3f110b629748ee371
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU0ZTEzNTVhNGM4Njc5ZjhmZGQxMTQiLCJlbWFpbCI6Im1hbnVlbC5wZWxhZXpAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6Im1hbnVwZGxyIiwiaWF0IjoxNzEyNDAxOTg2LCJleHAiOjE3MTI0MDkxODZ9.mJpr5hPcr-MvRoDh2lPt46q_6fJRTRI_uPdYIKZEA4Y
+
+###
+<<<<<<<<< Temporary merge branch 1
+# Coger las reservas de un admin
+
+GET http://localhost:3000/api/reservations/getReservationsFromAdmin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjEzZWI3OWE4ZmRhZDVkMzIzNzQ5NWEiLCJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImFsZXh4eCIsImlhdCI6MTcxMzI4NTI5OCwiZXhwIjoxNzEzMjkyNDk4fQ.VmwTxbJMx4k7Dt0o-749L9PpJhE1IN8k9wZHD4JoG6s
+
+###
+# Reservar un aula para una reserva
+
+PUT http://localhost:3000/api/reservations/reserveClassroom/661c377202ad3a31f264243d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjEzZWI3OWE4ZmRhZDVkMzIzNzQ5NWEiLCJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImFsZXh4eCIsInRva2VuVHlwZSI6InNpZ24iLCJpYXQiOjE3MTM0NDkwOTgsImV4cCI6MTcxMzQ1NjI5OH0.EtCQBxdzowKOR8w37G50kwvslolLLNh2pBCnt9ArUmY
+Content-Type: application/json
+
+{
+  "classroomNumber": "202",
+  "date": "13/05/2024",
+  "time_slot": "19-21",
+  "building": "Madrid"
+}
+
+### token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJpYXQiOjE3MTMzNzA3MzMsImV4cCI6MTcxMzM3NzkzM30.xso95UTT2OCj7q8pR6e-FNQuWTvwSxBh3I3RxeOSbSE&id=661c377202ad3a31f264243d&classroomNumber=202&building=Madrid
+#Aceptar o rechazar una reserva
+PUT http://localhost:3000/api/reservations/acceptOrRejectClassroom/661c377202ad3a31f264243d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRlci5iYXNAbGl2ZS51LXRhZC5jb20iLCJ0b2tlblR5cGUiOiJ1dGFkIiwiaWF0IjoxNzEzNDQ5MTMxLCJleHAiOjE3MTM0Nzc5MzF9.mA2_pOjw3IItP8rbDgC4S5OSFZKmX3VnmUugfa1mf-A
+Content-Type: application/json
+
+{
+  "accept": true,
+  "classroomNumber": "202",
+  "building": "Madrid"
+}
+=========
+
+# GET de notificaciones
+GET http://localhost:3000/api/notifications/getNotifications
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBmZDc0ZDE1NjQyZTEyMTFjMDE3MGUiLCJlbWFpbCI6Imp1YW4uYmVubGxvY2hAbGl2ZS51LXRhZC5jb20iLCJuaWNrbmFtZSI6ImpvYW4iLCJpYXQiOjE3MTMyOTE3NTgsImV4cCI6MTcxMzI5ODk1OH0.OgFeXP8T0xlQ9Z9PqngKRLhYYmkAR6qF0Fb74mVGenc
+>>>>>>>>> Temporary merge branch 2
